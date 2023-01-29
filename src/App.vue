@@ -1,49 +1,31 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+
+import Navbar from "@/components/Navbar.vue";
+
+import AndroidCard1 from "@/components/cards/AndroidCard1.vue";
 </script>
 
 <template>
-<!--  <header>-->
-<!--    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />-->
 
-<!--    <div class="wrapper">-->
-<!--      <HelloWorld msg="You did it!" />-->
-<!--    </div>-->
-<!--  </header>-->
+  <header>
+    <Navbar></Navbar>
+  </header>
 
-<!--  <main>-->
-<!--    <TheWelcome />-->
-<!--  </main>-->
+  <h1 class="display-1">My projects</h1>
+
+  <div id="cards-content-L-R">
+    <AndroidCard1 :card-number="'card1'"/>
+    <AndroidCard1 :card-number="'card2'"/>
+  </div>
+
+  <div id="cards-content-R-L">
+    <AndroidCard1 :card-number="'card1'"/>
+    <AndroidCard1 :card-number="'card2'"/>
+  </div>
 
 
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
 </style>
