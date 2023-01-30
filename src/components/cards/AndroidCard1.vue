@@ -1,10 +1,10 @@
 <template>
-  <div id="{{cardNumber}}" class="card rounded-5 m-3 custom-card"
+  <div id="{{cardNumber}}" class="card rounded-5 m-3 custom-card-android"
        @mouseover="addClass(cardNumber)"
        @mouseleave="removeClass(cardNumber)">
     <img src="src/images/unnamed.jpeg" class="card-img-top p-4" alt="...">
 
-    <div class="card-body text-black">
+    <div class="card-body text-black body-android">
       <h5 class="card-title fs-3">Application for local IT business</h5>
       <p class="card-text">
         Useful tool for workers in IT power company. This app helps collect data and manage records about city areas.
@@ -44,14 +44,14 @@ export default {
 
 $android-color: #3ddc84
 
-.custom-card
+.custom-card-android
   transition: all ease-in-out 0.15s
   border: 3px solid $android-color
 
   &:hover
     scale: 1.02
 
-  .card-body
+  .body-android
     background-color: $android-color
     height: border-box
 

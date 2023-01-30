@@ -1,13 +1,13 @@
 <template>
-  <div id="{{cardNumber}}" class="card rounded-5 m-3 custom-card-algorithms"
+  <div id="{{cardNumber}}" class="card rounded-5 m-3 custom-card-devops"
        @mouseover="addClass(cardNumber)"
        @mouseleave="removeClass(cardNumber)">
 
-      <slot name="image"></slot>
+    <slot name="image"></slot>
 
 
 
-    <div class="card-body text-black body-algorithms">
+    <div class="card-body text-black body-devops">
       <h5 class="card-title fs-3"><slot name="title"></slot></h5>
       <p class="card-text">
         <slot name="text"></slot>
@@ -24,7 +24,7 @@
 import Tooltip from "@/components/Tooltip.vue";
 
 export default {
-  name: "AlgorithmCard",
+  name: "DevopsCard",
   components: {Tooltip},
   props: {
     cardNumber: String
@@ -43,16 +43,16 @@ export default {
 
 <style lang="sass">
 
-$android-color: #fcd40c
+$android-color: #0cb4fc
 
-.custom-card-algorithms
+.custom-card-devops
   transition: all ease-in-out 0.15s
   border: 3px solid $android-color
 
   &:hover
     scale: 1.02
 
-  .body-algorithms
+  .body-devops
     background-color: $android-color
     height: border-box
 
