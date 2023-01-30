@@ -16,63 +16,74 @@ import DevopsCard from "@/components/cards/DevopsCard.vue";
 
   <h1 class="display-1">My projects</h1>
 
-  <div id="devops-projects" class="cards-content-R-L">
-    <DevopsCard>
-      <template v-slot:image><div class="card-img-top p-4">PENDING</div></template>
-      <template v-slot:title>This Website</template>
-      <template v-slot:text></template>
-      <template v-slot:tooltips>
-        <Tooltip>node.js</Tooltip>
-        <Tooltip>Vue.js</Tooltip>
-        <Tooltip>Bootstrap</Tooltip>
-        <Tooltip>DevOps</Tooltip>
-      </template>
-    </DevopsCard>
-    <DevopsCard>
-      <template v-slot:image><div class="card-img-top p-4">PENDING</div></template>
-      <template v-slot:title>IaS</template>
-      <template v-slot:text></template>
-      <template v-slot:tooltips>
-        <Tooltip>Terraform</Tooltip>
-        <Tooltip>Linux</Tooltip>
-      </template>
-    </DevopsCard>
-    <DevopsCard class="">
-      <template v-slot:image><div class="card-img-top p-4">PENDING</div></template>
-      <template v-slot:title>CI/CD</template>
-      <template v-slot:text></template>
-      <template v-slot:tooltips>
-        <Tooltip>Docker</Tooltip>
-        <Tooltip>Jenkins</Tooltip>
-        <Tooltip>AWS</Tooltip>
-      </template>
-    </DevopsCard>
-    <DevopsCard class="start-10">
-      <template v-slot:image><div class="card-img-top p-4">PENDING</div></template>
-      <template v-slot:title>CI/CD</template>
-      <template v-slot:text></template>
-      <template v-slot:tooltips>
-        <Tooltip>Docker</Tooltip>
-        <Tooltip>Jenkins</Tooltip>
-        <Tooltip>AWS</Tooltip>
-      </template>
-    </DevopsCard>
-  </div>
+  <div id="cards-column" class="col">
 
-  <div id="android-projects" class="cards-content-L-R">
+    <div id="devops-projects" class="row align-items-sm-start cards-content-right-over-left">
+      <div class="col">
+        <DevopsCard>
+          <template v-slot:image>
+            <img src="src/images/infinity.png" class="card-img-top p-4"/>
+          </template>
+          <template v-slot:title>This Website</template>
+          <template v-slot:text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet metus
+            auctor, vehicula turpis a, vehicula metus. In blandit commodo tincidunt. Nam imperdiet nisl leo, vitae
+            vulputate neque commodo feugiat. Aenean sodales eros pellentesque erat aliquet faucibus. Vivamus fermentum
+            ut velit pulvinar posuere. Mauris eu finibus est, et blandit ipsum. Praesent faucibus sapien quis sem tempus
+            pretium. Aliquam erat volutpat.
+          </template>
+          <template v-slot:tooltips>
+            <Tooltip>node.js</Tooltip>
+            <Tooltip>Vue.js</Tooltip>
+            <Tooltip>Bootstrap</Tooltip>
+            <Tooltip>DevOps</Tooltip>
+          </template>
+        </DevopsCard>
+      </div>
+      <div class="col">
+        <h1 class="display-6 text-center">DevOps</h1>
+        <DevopsCard>
+          <template v-slot:image>
+            <div src="src/images/infinity.png" class="card-img-top p-4"/>
+          </template>
+          <template v-slot:title>IaS</template>
+          <template v-slot:text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet metus
+            auctor, vehicula turpis a, vehicula metus.
+          </template>
+          <template v-slot:tooltips>
+            <Tooltip>Terraform</Tooltip>
+            <Tooltip>Linux</Tooltip>
+          </template>
+        </DevopsCard>
+        <DevopsCard>
+          <template v-slot:image><img src="src/images/infinity.png" class="card-img-top p-4"/></template>
+          <template v-slot:title>CI/CD</template>
+          <template v-slot:text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet metus
+            auctor, vehicula turpis a, vehicula metus.
+          </template>
+          <template v-slot:tooltips>
+            <Tooltip>Docker</Tooltip>
+            <Tooltip>Jenkins</Tooltip>
+            <Tooltip>AWS</Tooltip>
+          </template>
+        </DevopsCard>
+      </div>
+    </div>
+
+    <h1 class="display-6 text-center">Software</h1>
+    <div id="android-projects" class="row align-items-center cards-content-left-over-right">
       <div class="col">
         <AndroidCard1 :card-number="'card1'"/>
       </div>
-    <div class="row align-items-center">
       <div class="col">
         <AndroidCard1 :card-number="'card2'"/>
       </div>
+
     </div>
-  </div>
 
-  <div id="uni-basics-projects" class="cards-content-even">
+    <div class=""></div>
+    <h1 class="display-6 text-center">Experimental</h1>
+    <div id="uni-basics-projects" class="row cards-content-even">
 
-    <div class="row align-items-center">
       <div class="col">
         <AlgorithmCard :card-number="'card2'">
           <template v-slot:image>
@@ -100,13 +111,11 @@ import DevopsCard from "@/components/cards/DevopsCard.vue";
           </template>
         </AlgorithmCard>
       </div>
-    </div>
-
-    <div class="row align-items-center">
       <div class="col">
-
-        <AlgorithmCard  :card-number="'card1'">
-          <template v-slot:image><div class="card-img-top p-4" alt="..."></div></template>
+        <AlgorithmCard :card-number="'card1'">
+          <template v-slot:image>
+            <div class="card-img-top p-4" alt="..."></div>
+          </template>
           <template v-slot:title>Algorithms & Data structures</template>
           <template v-slot:text>Leetcode solutions with nice-looking boxing. <br> I created Markdown generator to wrap
             up my solutions and related test cases.
@@ -118,12 +127,11 @@ import DevopsCard from "@/components/cards/DevopsCard.vue";
             <Tooltip>Java</Tooltip>
           </template>
         </AlgorithmCard>
-
       </div>
+
     </div>
 
   </div>
-
 
 </template>
 
