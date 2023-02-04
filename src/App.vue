@@ -14,9 +14,10 @@ import DevopsCard from "@/components/cards/DevopsCard.vue";
     <Navbar></Navbar>
   </header>
 
-  <h1 class="display-1">My projects</h1>
 
-  <div id="cards-column" class="col">
+  <h1 class="display-1 mt-3">My projects</h1>
+
+  <div id="cards-column" class="col mt-3">
 
     <div id="devops-projects" class="row align-items-sm-start cards-content-right-over-left">
       <div class="col">
@@ -45,13 +46,13 @@ import DevopsCard from "@/components/cards/DevopsCard.vue";
           <template v-slot:image>
             <div src="src/images/infinity.png" class="card-img-top p-4"/>
           </template>
-          <template v-slot:title>IaS</template>
+          <template v-slot:title>IaC</template>
           <template v-slot:text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet metus
             auctor, vehicula turpis a, vehicula metus.
           </template>
           <template v-slot:tooltips>
             <Tooltip>Terraform</Tooltip>
-            <Tooltip>Linux</Tooltip>
+            <Tooltip>Ansible</Tooltip>
           </template>
         </DevopsCard>
         <DevopsCard>
