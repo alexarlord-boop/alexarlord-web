@@ -1,14 +1,15 @@
 <template>
-  <div id="{{cardNumber}}" class="card rounded-5 m-3 custom-card-devops"
-       @mouseover="addClass(cardNumber)"
-       @mouseleave="removeClass(cardNumber)">
+  <div class="card rounded-5 m-3 basic-card"
+       @mouseover="addClass"
+       @mouseleave="removeClass">
 
     <slot name="image"></slot>
 
 
-
-    <div class="card-body text-black body-devops">
-      <h5 class="card-title fs-3"><slot name="title"></slot></h5>
+    <div class="card-body text-black basic-card__body">
+      <h5 class="card-title fs-3">
+        <slot name="title"></slot>
+      </h5>
       <p class="card-text">
         <slot name="text"></slot>
       </p>
@@ -21,14 +22,8 @@
 </template>
 
 <script>
-import Tooltip from "@/components/Tooltip.vue";
-
 export default {
-  name: "DevopsCard",
-  components: {Tooltip},
-  props: {
-    cardNumber: String
-  },
+  name: "BasicCard",
   methods: {
     addClass: function () {
       this.$el.classList.add("shadow", "bg-body-tertiary", "rounded")
@@ -37,25 +32,18 @@ export default {
       this.$el.classList.remove("shadow", "bg-body-tertiary", "rounded")
     }
   }
-
 }
 </script>
 
 <style lang="sass">
 
-$android-color: #0cb4fc
-
-.custom-card-devops
+.basic-card
   transition: all ease-in-out 0.15s
-  border: 3px solid $android-color
 
   &:hover
     scale: 1.02
 
-  .body-devops
-    background-color: $android-color
+  .basic-card__body
     height: border-box
-
-
 
 </style>

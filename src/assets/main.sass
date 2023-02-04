@@ -1,0 +1,76 @@
+@import './base.css'
+
+#app
+  max-width: 1280px
+  margin: 0 auto
+  padding: 2rem
+
+  font-weight: normal
+
+
+
+a,
+.green
+  text-decoration: none
+  color: hsla(160, 100%, 37%, 1)
+  transition: 0.4s
+
+
+
+
+@media (min-width: 1024px)
+
+  #cards-column
+    display: grid
+    row-gap: 50px
+
+
+
+  .cards-content-left-over-right
+    display: grid
+    grid-template-columns: 2fr 1fr
+    column-gap: 10px
+    padding: 0 2rem
+
+
+
+  .cards-content-right-over-left
+    display: grid
+    grid-template-columns: 1fr 2fr
+    padding: 0 2rem
+
+
+
+  .cards-content-even
+    display: grid
+    grid-template-columns: 1fr 1fr
+    padding: 0 2rem
+
+
+// custom cards style
+
+.basic-card.golographic
+  border: 3px solid var(--custom-card-golographic-2)
+
+  .basic-card__body
+    //background-color: var(--custom-card-golographic-1)
+    background: var(--custom-card-golographic-1)
+
+.basic-card.devops
+    border: 3px solid var(--custom-card-devops-1)
+
+    .basic-card__body
+        background-color: var(--custom-card-devops-1)
+
+.basic-card.android
+  border: 3px solid var(--custom-card-android-1)
+
+  .basic-card__body
+    background-color: var(--custom-card-android-1)
+
+.basic-card.sideproject
+  border: 3px solid var(--custom-card-sideproject-1)
+
+  .basic-card__body
+    background-color: var(--custom-card-sideproject-1)
+

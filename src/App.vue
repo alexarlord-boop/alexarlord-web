@@ -2,10 +2,8 @@
 
 import Navbar from "@/components/Navbar.vue";
 
-import AndroidCard1 from "@/components/cards/AndroidCard1.vue";
-import AlgorithmCard from "@/components/cards/AlgorithmCard.vue";
 import Tooltip from "@/components/Tooltip.vue";
-import DevopsCard from "@/components/cards/DevopsCard.vue";
+import BasicCard from "@/components/cards/BasicCard.vue";
 </script>
 
 <template>
@@ -21,7 +19,7 @@ import DevopsCard from "@/components/cards/DevopsCard.vue";
 
     <div id="devops-projects" class="row align-items-sm-start cards-content-right-over-left">
       <div class="col">
-        <DevopsCard>
+        <BasicCard class="golographic">
           <template v-slot:image>
             <img src="src/images/infinity.png" alt="devops-card" class="card-img-top p-4"/>
           </template>
@@ -33,16 +31,15 @@ import DevopsCard from "@/components/cards/DevopsCard.vue";
             pretium. Aliquam erat volutpat.
           </template>
           <template v-slot:tooltips>
-            <Tooltip>node.js</Tooltip>
             <Tooltip>Vue.js</Tooltip>
             <Tooltip>Bootstrap</Tooltip>
-            <Tooltip>DevOps</Tooltip>
+            <Tooltip>Github Pages</Tooltip>
           </template>
-        </DevopsCard>
+        </BasicCard>
       </div>
       <div class="col">
         <h1 class="display-6 text-center">DevOps</h1>
-        <DevopsCard>
+        <BasicCard class="devops">
           <template v-slot:image>
             <div class="card-img-top p-4"/>
           </template>
@@ -54,8 +51,8 @@ import DevopsCard from "@/components/cards/DevopsCard.vue";
             <Tooltip>Terraform</Tooltip>
             <Tooltip>Ansible</Tooltip>
           </template>
-        </DevopsCard>
-        <DevopsCard>
+        </BasicCard>
+        <BasicCard class="devops">
           <template v-slot:image><img src="src/images/infinity.png" alt="devops-card" class="card-img-top p-4"/></template>
           <template v-slot:title>CI/CD</template>
           <template v-slot:text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet metus
@@ -66,27 +63,44 @@ import DevopsCard from "@/components/cards/DevopsCard.vue";
             <Tooltip>Jenkins</Tooltip>
             <Tooltip>AWS</Tooltip>
           </template>
-        </DevopsCard>
+        </BasicCard>
       </div>
     </div>
 
     <h1 class="display-6 text-center">Software</h1>
     <div id="android-projects" class="row align-items-center cards-content-left-over-right">
       <div class="col">
-        <AndroidCard1 :card-number="'card1'"/>
+        <BasicCard class="android">
+          <template v-slot:image><img src="src/images/unnamed.jpeg" alt="android-card" class="card-img-top p-4"/></template>
+          <template v-slot:title>Application for local IT business</template>
+          <template v-slot:text>Useful tool for workers in IT power company. This app helps collect data and manage records about city areas.</template>
+          <template v-slot:tooltips>
+            <Tooltip>Kotlin</Tooltip>
+            <Tooltip>Jetpack Compose</Tooltip>
+            <Tooltip>Material Design</Tooltip>
+          </template>
+        </BasicCard>
       </div>
       <div class="col">
-        <AndroidCard1 :card-number="'card2'"/>
+        <BasicCard class="android">
+          <template v-slot:image><img src="src/images/android.png" alt="android-card" class="card-img-top p-4"/></template>
+          <template v-slot:title>Application for local IT business</template>
+          <template v-slot:text>Useful tool for workers in IT power company. This app helps collect data and manage records about city areas.</template>
+          <template v-slot:tooltips>
+            <Tooltip>Kotlin</Tooltip>
+            <Tooltip>Jetpack Compose</Tooltip>
+            <Tooltip>Material Design</Tooltip>
+          </template>
+        </BasicCard>
       </div>
 
     </div>
 
-    <div class=""></div>
     <h1 class="display-6 text-center">Experimental</h1>
     <div id="uni-basics-projects" class="row cards-content-even">
 
       <div class="col">
-        <AlgorithmCard :card-number="'card2'">
+        <BasicCard class="sideproject" :card-number="'card2'">
           <template v-slot:image>
             <div class="card-img-top p-4"></div>
           </template>
@@ -96,8 +110,8 @@ import DevopsCard from "@/components/cards/DevopsCard.vue";
             <Tooltip>Python</Tooltip>
             <Tooltip>Github-API</Tooltip>
           </template>
-        </AlgorithmCard>
-        <AlgorithmCard :card-number="'card2'">
+        </BasicCard>
+        <BasicCard class="sideproject" :card-number="'card2'">
           <template v-slot:image>
             <div class="card-img-top p-4"></div>
           </template>
@@ -110,10 +124,10 @@ import DevopsCard from "@/components/cards/DevopsCard.vue";
             <Tooltip>PostgreSql</Tooltip>
             <Tooltip>Scrum</Tooltip>
           </template>
-        </AlgorithmCard>
+        </BasicCard>
       </div>
       <div class="col">
-        <AlgorithmCard :card-number="'card1'">
+        <BasicCard class="sideproject" :card-number="'card1'">
           <template v-slot:image>
             <div class="card-img-top p-4"></div>
           </template>
@@ -127,7 +141,7 @@ import DevopsCard from "@/components/cards/DevopsCard.vue";
             <Tooltip>Python</Tooltip>
             <Tooltip>Java</Tooltip>
           </template>
-        </AlgorithmCard>
+        </BasicCard>
       </div>
 
     </div>
