@@ -96,7 +96,6 @@ import BasicCard from "@/components/cards/BasicCard.vue";
 
     </div>
 
-    <div class=""></div>
     <h1 class="display-6 text-center">Experimental</h1>
     <div id="uni-basics-projects" class="row cards-content-even">
 
