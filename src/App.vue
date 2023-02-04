@@ -23,7 +23,7 @@ import DevopsCard from "@/components/cards/DevopsCard.vue";
       <div class="col">
         <DevopsCard>
           <template v-slot:image>
-            <img src="src/images/infinity.png" class="card-img-top p-4"/>
+            <img src="src/images/infinity.png" alt="devops-card" class="card-img-top p-4"/>
           </template>
           <template v-slot:title>This Website</template>
           <template v-slot:text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet metus
@@ -44,7 +44,7 @@ import DevopsCard from "@/components/cards/DevopsCard.vue";
         <h1 class="display-6 text-center">DevOps</h1>
         <DevopsCard>
           <template v-slot:image>
-            <div src="src/images/infinity.png" class="card-img-top p-4"/>
+            <div class="card-img-top p-4"/>
           </template>
           <template v-slot:title>IaC</template>
           <template v-slot:text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet metus
@@ -56,7 +56,7 @@ import DevopsCard from "@/components/cards/DevopsCard.vue";
           </template>
         </DevopsCard>
         <DevopsCard>
-          <template v-slot:image><img src="src/images/infinity.png" class="card-img-top p-4"/></template>
+          <template v-slot:image><img src="src/images/infinity.png" alt="devops-card" class="card-img-top p-4"/></template>
           <template v-slot:title>CI/CD</template>
           <template v-slot:text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet metus
             auctor, vehicula turpis a, vehicula metus.
@@ -88,7 +88,7 @@ import DevopsCard from "@/components/cards/DevopsCard.vue";
       <div class="col">
         <AlgorithmCard :card-number="'card2'">
           <template v-slot:image>
-            <div class="card-img-top p-4" alt="..."></div>
+            <div class="card-img-top p-4"></div>
           </template>
           <template v-slot:title>Github Requests</template>
           <template v-slot:tooltips>
@@ -99,7 +99,7 @@ import DevopsCard from "@/components/cards/DevopsCard.vue";
         </AlgorithmCard>
         <AlgorithmCard :card-number="'card2'">
           <template v-slot:image>
-            <div class="card-img-top p-4" alt="..."></div>
+            <div class="card-img-top p-4"></div>
           </template>
           <template v-slot:title>Team Project</template>
           <template v-slot:text>My team and I worked on a complex project...</template>
@@ -115,7 +115,7 @@ import DevopsCard from "@/components/cards/DevopsCard.vue";
       <div class="col">
         <AlgorithmCard :card-number="'card1'">
           <template v-slot:image>
-            <div class="card-img-top p-4" alt="..."></div>
+            <div class="card-img-top p-4"></div>
           </template>
           <template v-slot:title>Algorithms & Data structures</template>
           <template v-slot:text>Leetcode solutions with nice-looking boxing. <br> I created Markdown generator to wrap
