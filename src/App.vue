@@ -19,7 +19,7 @@ import BasicCard from "@/components/cards/BasicCard.vue";
 
     <div id="devops-projects" class="row align-items-sm-start cards-content-right-over-left">
       <div class="col">
-        <BasicCard class="golographic">
+        <BasicCard v-bind:lnk="'https://github.com/alexarlord-boop/alexarlord-web'" class="golographic">
           <template v-slot:image>
             <img src="src/images/infinity.png" alt="devops-card" class="card-img-top p-4"/>
           </template>
@@ -100,7 +100,7 @@ import BasicCard from "@/components/cards/BasicCard.vue";
     <div id="uni-basics-projects" class="row cards-content-even">
 
       <div class="col">
-        <BasicCard class="sideproject" :card-number="'card2'">
+        <BasicCard v-bind:lnk="'https://github.com/alexarlord-boop/python_au/tree/main/requests'" class="sideproject" :card-number="'card2'">
           <template v-slot:image>
             <div class="card-img-top p-4"></div>
           </template>
@@ -111,7 +111,7 @@ import BasicCard from "@/components/cards/BasicCard.vue";
             <Tooltip>Github-API</Tooltip>
           </template>
         </BasicCard>
-        <BasicCard class="sideproject" :card-number="'card2'">
+        <BasicCard v-bind:lnk="'https://github.com/alexarlord-boop/union-station'" class="sideproject" :card-number="'card2'">
           <template v-slot:image>
             <div class="card-img-top p-4"></div>
           </template>
@@ -127,7 +127,7 @@ import BasicCard from "@/components/cards/BasicCard.vue";
         </BasicCard>
       </div>
       <div class="col">
-        <BasicCard class="sideproject" :card-number="'card1'">
+        <BasicCard v-bind:lnk="'https://github.com/alexarlord-boop/java-au'" class="sideproject" :card-number="'card1'">
           <template v-slot:image>
             <div class="card-img-top p-4"></div>
           </template>
@@ -138,7 +138,6 @@ import BasicCard from "@/components/cards/BasicCard.vue";
           <template v-slot:tooltips>
             <Tooltip>Git</Tooltip>
             <Tooltip>Markdown</Tooltip>
-            <Tooltip>Python</Tooltip>
             <Tooltip>Java</Tooltip>
           </template>
         </BasicCard>
