@@ -1,7 +1,7 @@
 <template>
   <div class="card rounded-5 m-3 basic-card"
-       @mouseover=""
-       @mouseleave=""
+       @mouseover="addClass"
+       @mouseleave="removeClass"
        @click="goToLNK(lnk)">
 
     <slot name="image"></slot>
