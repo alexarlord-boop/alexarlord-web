@@ -8,14 +8,11 @@
   font-weight: normal
 
 
-
 a,
 .green
   text-decoration: none
   color: hsla(160, 100%, 37%, 1)
   transition: 0.4s
-
-
 
 
 @media (min-width: 1024px)
@@ -25,7 +22,6 @@ a,
     row-gap: 50px
 
 
-
   .cards-content-left-over-right
     display: grid
     grid-template-columns: 2fr 1fr
@@ -33,12 +29,10 @@ a,
     padding: 0 2rem
 
 
-
   .cards-content-right-over-left
     display: grid
     grid-template-columns: 1fr 2fr
     padding: 0 2rem
-
 
 
   .cards-content-even
@@ -56,11 +50,17 @@ a,
     //background-color: var(--custom-card-golographic-1)
     background: var(--custom-card-golographic-1)
 
-.basic-card.devops
-    border: 3px solid var(--custom-card-devops-1)
+  .card-title, .card-text
+    color: white
 
-    .basic-card__body
-        background-color: var(--custom-card-devops-1)
+  .github-icon
+    filter: brightness(100)
+
+.basic-card.devops
+  border: 3px solid var(--custom-card-devops-1)
+
+  .basic-card__body
+    background-color: var(--custom-card-devops-1)
 
 .basic-card.android
   border: 3px solid var(--custom-card-android-1)

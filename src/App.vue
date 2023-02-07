@@ -15,20 +15,17 @@ import BasicCard from "@/components/cards/BasicCard.vue";
 
   <h1 class="display-1 mt-3">My projects</h1>
 
-  <div id="cards-column" class="col mt-3">
+  <div id="cards-column" class="col mt-5">
 
-    <div id="devops-projects" class="row align-items-sm-start cards-content-right-over-left">
+    <div id="devops-projects" class="row align-items-sm-start cards-content-even">
       <div class="col">
         <BasicCard v-bind:lnk="'https://github.com/alexarlord-boop/alexarlord-web'" class="golographic">
           <template v-slot:image>
-            <img src="src/images/infinity.png" alt="devops-card" class="card-img-top p-4"/>
+            <img src="src/images/infinity.png" alt="devops-card" class="card-img-top p-0 rounded-5"/>
           </template>
           <template v-slot:title>This Website</template>
-          <template v-slot:text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet metus
-            auctor, vehicula turpis a, vehicula metus. In blandit commodo tincidunt. Nam imperdiet nisl leo, vitae
-            vulputate neque commodo feugiat. Aenean sodales eros pellentesque erat aliquet faucibus. Vivamus fermentum
-            ut velit pulvinar posuere. Mauris eu finibus est, et blandit ipsum. Praesent faucibus sapien quis sem tempus
-            pretium. Aliquam erat volutpat.
+          <template v-slot:text>This site is about my multiskill personality. <br> I tried myself and succeed in many different IT fields. Here you can find my essential projects, which I personally enjoyed working on and would like to share with you.
+            <br>I strive for elegant solution!
           </template>
           <template v-slot:tooltips>
             <Tooltip>Vue.js</Tooltip>
@@ -53,7 +50,7 @@ import BasicCard from "@/components/cards/BasicCard.vue";
           </template>
         </BasicCard>
         <BasicCard class="devops">
-          <template v-slot:image><img src="src/images/infinity.png" alt="devops-card" class="card-img-top p-4"/></template>
+          <template v-slot:image><div class="card-img-top p-4"/></template>
           <template v-slot:title>CI/CD</template>
           <template v-slot:text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet metus
             auctor, vehicula turpis a, vehicula metus.
@@ -76,8 +73,7 @@ import BasicCard from "@/components/cards/BasicCard.vue";
           <template v-slot:text>Useful tool for workers in IT power company. This app helps collect data and manage records about city areas.</template>
           <template v-slot:tooltips>
             <Tooltip>Kotlin</Tooltip>
-            <Tooltip>Jetpack Compose</Tooltip>
-            <Tooltip>Material Design</Tooltip>
+            <Tooltip>Vanilla Android</Tooltip>
           </template>
         </BasicCard>
       </div>
@@ -96,7 +92,7 @@ import BasicCard from "@/components/cards/BasicCard.vue";
 
     </div>
 
-    <h1 class="display-6 text-center">Experimental</h1>
+    <h1 class="display-6 text-center">Basics</h1>
     <div id="uni-basics-projects" class="row cards-content-even">
 
       <div class="col">
@@ -144,7 +140,6 @@ import BasicCard from "@/components/cards/BasicCard.vue";
       </div>
 
     </div>
-
   </div>
 
 </template>
