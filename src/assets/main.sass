@@ -53,8 +53,6 @@ a,
   .card-title, .card-text
     color: white
 
-  .github-icon
-    filter: brightness(100)
 
 .basic-card.devops
   border: 3px solid var(--custom-card-devops-1)
@@ -71,8 +69,14 @@ a,
 .basic-card.api
   border: 3px solid var(--custom-card-api-1)
 
+  .header-image
+    background: #6200ee
+
   .basic-card__body
     background-color: var(--custom-card-api-1)
+
+  .card-title, .card-text
+    color: white
 
 .basic-card.sideproject
   border: 3px solid var(--custom-card-sideproject-1)
@@ -80,3 +84,11 @@ a,
   .basic-card__body
     background-color: var(--custom-card-sideproject-1)
 
+.basic-card.git
+  border: 3px solid black
+
+  .basic-card__body
+    background-color: black
+
+    .card-title, .card-text
+      color: var(--custom-card-sideproject-1)

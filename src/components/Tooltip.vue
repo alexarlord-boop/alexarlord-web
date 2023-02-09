@@ -1,6 +1,6 @@
 <template>
 
-    <span class="badge bg-secondary rounded-pill m-1 ">
+    <span class="badge bg-black rounded-pill m-1 ">
     <slot></slot>
     </span>
 
