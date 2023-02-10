@@ -141,9 +141,8 @@ import BasicCard from "@/components/cards/BasicCard.vue";
 
     </div>
 
-    <h1 class="display-6 text-center m-3">Basics</h1>
-    <div id="uni-basics-projects" class="row cards-content-even">
-
+    <h1 class="display-6 text-center m-5">Basics</h1>
+    <div id="uni-basics-projects" class="cards-content-right-over-left">
       <div class="col">
         <BasicCard v-bind:lnk="'https://github.com/alexarlord-boop/python_au/tree/main/requests'" class="git"
                    :card-number="'card2'">
@@ -163,8 +162,8 @@ import BasicCard from "@/components/cards/BasicCard.vue";
           </template>
           <template v-slot:title>Github Requests</template>
           <template v-slot:text>
-            This project is about using Github API to improve team-work experience. You can use it to check naming of
-            commits, pull-requests and comments.<br>
+            This project is about using Github API to improve the teamwork experience.<br> You can use it to check the
+            naming of commits, pull requests, and comments.<br>
             <br>
             30+ developers used this project.
           </template>
@@ -174,6 +173,8 @@ import BasicCard from "@/components/cards/BasicCard.vue";
             <Tooltip>Github-API</Tooltip>
           </template>
         </BasicCard>
+      </div>
+      <div class="col">
         <BasicCard v-bind:lnk="'https://github.com/alexarlord-boop/union-station'" class="git">
           <template v-slot:image>
             <svg xmlns="http://www.w3.org/2000/svg" width="5rem" height="5rem" fill="#fcd40c"
@@ -201,9 +202,7 @@ import BasicCard from "@/components/cards/BasicCard.vue";
             <Tooltip>Scrum</Tooltip>
           </template>
         </BasicCard>
-      </div>
-      <div class="col">
-        <BasicCard v-bind:lnk="'https://github.com/alexarlord-boop/java-au'" class="sideproject" >
+        <BasicCard v-bind:lnk="'https://github.com/alexarlord-boop/java-au'" class="sideproject">
           <template v-slot:image>
             <svg xmlns="http://www.w3.org/2000/svg" width="5rem" height="5rem" fill="black" class="bi bi-bricks m-3"
                  viewBox="0 0 16 16">
@@ -223,6 +222,18 @@ import BasicCard from "@/components/cards/BasicCard.vue";
         </BasicCard>
       </div>
     </div>
+  </div>
+
+  <div id="contact-section" class="text-center m-5 justify-content-evenly">
+
+    <h3 class="display-6">c<span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="black"
+           class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+        <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+      </svg>
+    </span>ntact me</h3>
+
   </div>
 
 </template>

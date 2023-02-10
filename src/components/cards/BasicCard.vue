@@ -21,12 +21,12 @@
       <h5 class="card-title fs-3">
         <slot name="title"></slot>
       </h5>
-      <p class="card-text fs-5">
+      <p class="card-text fs-5 mt-3">
         <slot name="text"></slot>
       </p>
     </div>
 
-    <div class="card-footer bg-transparent fs-5">
+    <div class="card-footer border-white bg-transparent fs-5">
       <slot name="tooltips"></slot>
     </div>
   </div>
@@ -40,10 +40,10 @@ export default {
   },
   methods: {
     addClass: function () {
-      this.$el.classList.add("shadow", "bg-body-tertiary", "rounded")
+      this.$el.classList.add("shadow-lg", "bg-body-tertiary", "rounded")
     },
     removeClass: function () {
-      this.$el.classList.remove("shadow", "bg-body-tertiary", "rounded")
+      this.$el.classList.remove("shadow-lg", "bg-body-tertiary", "rounded")
     },
 
     goToLNK: function (link) {
@@ -69,7 +69,5 @@ export default {
       opacity: 1
       scale: 1.2
 
-  .basic-card__body
-    height: border-box
 
 </style>
