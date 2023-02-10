@@ -1,7 +1,7 @@
 <template>
   <div class="card rounded-5 m-3 basic-card"
        @mouseover="addClass"
-       @mouseleave="removeClass"
+       @mouseout="removeClass"
        @click="goToLNK(lnk)">
 
     <div class="d-flex justify-content-evenly">

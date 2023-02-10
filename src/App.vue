@@ -16,11 +16,13 @@ import BasicCard from "@/components/cards/BasicCard.vue";
   <h1 class="display-1 mt-3">My projects</h1>
 
   <div id="cards-column" class="col mt-5">
-    <div id="devops-projects" class="row align-items-sm-start cards-content-even">
+    <div id="devops-projects" class="row align-items-sm-start">
       <div class="col">
         <BasicCard v-bind:lnk="'https://github.com/alexarlord-boop/alexarlord-web'" class="golographic">
           <template v-slot:image>
-            <img src="src/images/infinity.png" alt="devops-card" class="card-img-top p-0 rounded-5"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="9rem" height="9rem" fill="black" class="bi bi-infinity rota m-0" viewBox="0 0 16 16">
+              <path d="M5.68 5.792 7.345 7.75 5.681 9.708a2.75 2.75 0 1 1 0-3.916ZM8 6.978 6.416 5.113l-.014-.015a3.75 3.75 0 1 0 0 5.304l.014-.015L8 8.522l1.584 1.865.014.015a3.75 3.75 0 1 0 0-5.304l-.014.015L8 6.978Zm.656.772 1.663-1.958a2.75 2.75 0 1 1 0 3.916L8.656 7.75Z"/>
+            </svg>
           </template>
           <template v-slot:small-icon>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-github"
@@ -30,9 +32,9 @@ import BasicCard from "@/components/cards/BasicCard.vue";
             </svg>
           </template>
           <template v-slot:title>This Website</template>
-          <template v-slot:text>This site is about my multiskill personality. <br> I tried myself and succeed in many
-            different IT fields. Here you can find my essential projects, which I personally enjoyed working on and
-            would like to share with you.
+          <template v-slot:text>
+            This site is dedicated to my multidisciplinary personality. I have tried and excelled in many different areas of IT. On this page you can find my main projects that I really enjoyed working on and would like to share with you.
+            <br>
             <br>I strive for elegant solution!
           </template>
           <template v-slot:tooltips>
@@ -42,34 +44,34 @@ import BasicCard from "@/components/cards/BasicCard.vue";
           </template>
         </BasicCard>
       </div>
-      <div class="col">
-        <h1 class="display-6 text-center m-5">DevOps</h1>
-        <BasicCard class="devops">
-          <template v-slot:image>
-            <div class="card-img-top p-4"/>
-          </template>
-          <template v-slot:title>IaC</template>
-          <template v-slot:text>Lorem ipsum dolor sit amet.
-          </template>
-          <template v-slot:tooltips>
-            <Tooltip>Terraform</Tooltip>
-            <Tooltip>Ansible</Tooltip>
-          </template>
-        </BasicCard>
-        <BasicCard class="devops">
-          <template v-slot:image>
-            <div class="card-img-top p-4"/>
-          </template>
-          <template v-slot:title>CI/CD</template>
-          <template v-slot:text>Lorem ipsum dolor sit amet.
-          </template>
-          <template v-slot:tooltips>
-            <Tooltip>Docker</Tooltip>
-            <Tooltip>Jenkins</Tooltip>
-            <Tooltip>AWS</Tooltip>
-          </template>
-        </BasicCard>
-      </div>
+<!--      <div class="col">-->
+<!--        <h1 class="display-6 text-center m-5">DevOps</h1>-->
+<!--        <BasicCard class="devops">-->
+<!--          <template v-slot:image>-->
+<!--            <div class="card-img-top p-4"/>-->
+<!--          </template>-->
+<!--          <template v-slot:title>IaC</template>-->
+<!--          <template v-slot:text>Lorem ipsum dolor sit amet.-->
+<!--          </template>-->
+<!--          <template v-slot:tooltips>-->
+<!--            <Tooltip>Terraform</Tooltip>-->
+<!--            <Tooltip>Ansible</Tooltip>-->
+<!--          </template>-->
+<!--        </BasicCard>-->
+<!--        <BasicCard class="devops">-->
+<!--          <template v-slot:image>-->
+<!--            <div class="card-img-top p-4"/>-->
+<!--          </template>-->
+<!--          <template v-slot:title>CI/CD</template>-->
+<!--          <template v-slot:text>Lorem ipsum dolor sit amet.-->
+<!--          </template>-->
+<!--          <template v-slot:tooltips>-->
+<!--            <Tooltip>Docker</Tooltip>-->
+<!--            <Tooltip>Jenkins</Tooltip>-->
+<!--            <Tooltip>AWS</Tooltip>-->
+<!--          </template>-->
+<!--        </BasicCard>-->
+<!--      </div>-->
     </div>
 
     <div id="android-projects" class="row align-items-center cards-content-left-over-right">
@@ -227,7 +229,7 @@ import BasicCard from "@/components/cards/BasicCard.vue";
   <div id="contact-section" class="text-center m-5 justify-content-evenly">
 
     <h3 class="display-6">c<span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="black"
+      <svg xmlns="http://www.w3.org/2000/svg" width="1.2rem" height="1.2rem" fill="black"
            class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
         <path
             d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
