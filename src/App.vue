@@ -24,8 +24,8 @@ import Avatar from "@/components/Avatar.vue";
       <div class="col">
         <BasicCard v-bind:lnk="'https://github.com/alexarlord-boop/alexarlord-web'" class="golographic">
           <template v-slot:image>
-            <svg xmlns="http://www.w3.org/2000/svg" width="9rem" height="9rem" fill="black"
-                 class="bi bi-infinity rota m-0" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9rem" height="9rem"
+                 class="bi bi-infinity rota m-0 animated" viewBox="0 0 16 16">
               <path
                   d="M5.68 5.792 7.345 7.75 5.681 9.708a2.75 2.75 0 1 1 0-3.916ZM8 6.978 6.416 5.113l-.014-.015a3.75 3.75 0 1 0 0 5.304l.014-.015L8 8.522l1.584 1.865.014.015a3.75 3.75 0 1 0 0-5.304l-.014.015L8 6.978Zm.656.772 1.663-1.958a2.75 2.75 0 1 1 0 3.916L8.656 7.75Z"/>
             </svg>
@@ -52,34 +52,32 @@ import Avatar from "@/components/Avatar.vue";
           </template>
         </BasicCard>
       </div>
-      <!--      <div class="col">-->
-      <!--        <h1 class="display-6 text-center m-5">DevOps</h1>-->
-      <!--        <BasicCard class="devops">-->
-      <!--          <template v-slot:image>-->
-      <!--            <div class="card-img-top p-4"/>-->
-      <!--          </template>-->
-      <!--          <template v-slot:title>IaC</template>-->
-      <!--          <template v-slot:text>Lorem ipsum dolor sit amet.-->
-      <!--          </template>-->
-      <!--          <template v-slot:tooltips>-->
-      <!--            <Tooltip>Terraform</Tooltip>-->
-      <!--            <Tooltip>Ansible</Tooltip>-->
-      <!--          </template>-->
-      <!--        </BasicCard>-->
-      <!--        <BasicCard class="devops">-->
-      <!--          <template v-slot:image>-->
-      <!--            <div class="card-img-top p-4"/>-->
-      <!--          </template>-->
-      <!--          <template v-slot:title>CI/CD</template>-->
-      <!--          <template v-slot:text>Lorem ipsum dolor sit amet.-->
-      <!--          </template>-->
-      <!--          <template v-slot:tooltips>-->
-      <!--            <Tooltip>Docker</Tooltip>-->
-      <!--            <Tooltip>Jenkins</Tooltip>-->
-      <!--            <Tooltip>AWS</Tooltip>-->
-      <!--          </template>-->
-      <!--        </BasicCard>-->
-      <!--      </div>-->
+            <div class="col">
+              <h1 class="display-6 text-center m-5">Cloud</h1>
+              <BasicCard class="devops">
+                <template v-slot:image>
+                  <div class="card-img-top p-4"/>
+                </template>
+                <template v-slot:title>APK Builder</template>
+                <template v-slot:text>CI/CD configuration in cloud. The general purpose is to automate APK building for Android app.
+                </template>
+                <template v-slot:tooltips>
+                  <Tooltip>GitHub Actions</Tooltip>
+                  <Tooltip></Tooltip>
+                </template>
+              </BasicCard>
+              <BasicCard class="devops">
+                <template v-slot:image>
+                  <div class="card-img-top p-4"/>
+                </template>
+                <template v-slot:title>Cool Project</template>
+                <template v-slot:text>CI/CD configuration in cloud. The general purpose is to automate APK building for Android app.
+                </template>
+                <template v-slot:tooltips>
+                  <Tooltip>AWS</Tooltip>
+                </template>
+              </BasicCard>
+            </div>
     </div>
 
     <div id="android-projects" class="row align-items-center cards-content-left-over-right">
@@ -244,7 +242,7 @@ import Avatar from "@/components/Avatar.vue";
 
 
   <div id="contact-section" class="text-center" @mouseover="initLink"
-  @mouseleave="ejectLink">
+       @mouseleave="ejectLink">
 
     <div class=" custom-more-info custom-grid">
 
@@ -256,21 +254,23 @@ import Avatar from "@/components/Avatar.vue";
           </FooterLinks>
         </div>
         <div class="col-6 text-start">
-          <FooterLinks><FooterLink>telegram</FooterLink></FooterLinks>
+          <FooterLinks>
+            <FooterLink>telegram</FooterLink>
+          </FooterLinks>
         </div>
       </div>
-      <div class="col m-5 float-end"
-           data-bs-toggle="popover" data-bs-placement="right"
-           data-bs-custom-class="custom-popover"
-           data-bs-title="Custom popover"
-           data-bs-content="This popover is themed via CSS variables."
-      >
-        <div class="animation shadow-lg rounded-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="6rem" height="6rem" fill="currentColor" class="bi bi-arrows-fullscreen align-self-center" viewBox="-2 -2 20 20">
-            <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z"/>
-          </svg>
-        </div>
-      </div>
+      <!--      <div class="col m-5 float-end"-->
+      <!--           data-bs-toggle="popover" data-bs-placement="right"-->
+      <!--           data-bs-custom-class="custom-popover"-->
+      <!--           data-bs-title="Custom popover"-->
+      <!--           data-bs-content="This popover is themed via CSS variables."-->
+      <!--      >-->
+      <!--        <div class="animation shadow-lg rounded-3">-->
+      <!--          <svg xmlns="http://www.w3.org/2000/svg" width="6rem" height="6rem" fill="currentColor" class="bi bi-arrows-fullscreen align-self-center" viewBox="-2 -2 20 20">-->
+      <!--            <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z"/>-->
+      <!--          </svg>-->
+      <!--        </div>-->
+      <!--      </div>-->
 
     </div>
     <div id="page-bottom"></div>
@@ -306,9 +306,21 @@ export default {
 </script>
 
 <style lang="sass">
+
+.animated
+  stroke-dasharray: 200
+  stroke-dashoffset: 100
+  pointer-events: none
+  animation: animateDash 5s linear forwards infinite
+
+@keyframes animateDash
+  to
+    stroke-dashoffset: 50
+
+
 .animation
   width: 6rem
   height: 6rem
-  //border: 1px solid #000
+//border: 1px solid #000
 
 </style>
