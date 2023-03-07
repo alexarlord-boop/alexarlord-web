@@ -75,13 +75,13 @@ import StructureCard from "@/components/cards/StructureCard.vue";
       <div class="row">
         <div class="col-6 align-self-center text-end">
           <FooterLinks>
-            <FooterLink id="clicked" class="clicked">github</FooterLink>
-            <FooterLink>linkedin</FooterLink>
+            <FooterLink id="clicked" class="clicked" v-bind:lnk="'https://github.com/alexarlord-boop'">github</FooterLink>
+            <FooterLink v-bind:lnk="'https://www.linkedin.com/in/aleksandr-petrunin-b4b720259/'">linkedin</FooterLink>
           </FooterLinks>
         </div>
         <div class="col-6 text-start">
           <FooterLinks>
-            <FooterLink>telegram</FooterLink>
+            <FooterLink v-bind:lnk="'https://t.me/alexarlord'">telegram</FooterLink>
           </FooterLinks>
         </div>
       </div>
