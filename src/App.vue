@@ -8,6 +8,7 @@ import FooterLink from "@/components/FooterLink.vue";
 import FooterHead from "@/components/FooterHead.vue";
 import FooterLinks from "@/components/FooterLinks.vue";
 import Avatar from "@/components/Avatar.vue";
+import Chart from "@/components/dataVisualisation/Chart.vue";
 </script>
 
 <template>
@@ -16,10 +17,12 @@ import Avatar from "@/components/Avatar.vue";
     <Navbar></Navbar>
   </header>
 
-
   <h1 class="display-1 mt-3">My projects</h1>
 
   <div class="col mt-5 custom-grid">
+
+
+
     <div id="devops-projects" class="row align-items-sm-start">
       <div class="col">
         <BasicCard v-bind:lnk="'https://github.com/alexarlord-boop/alexarlord-web'" class="golographic">
@@ -279,7 +282,10 @@ import Avatar from "@/components/Avatar.vue";
 </template>
 
 <script>
+import * as d3 from "d3"
+
 export default {
+
   methods: {
     initLink() {
       // let pageBottom = document.querySelector("#page-bottom")
