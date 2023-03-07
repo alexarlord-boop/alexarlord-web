@@ -18,7 +18,7 @@
               Go to
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#cloud-projects">Cloud</a></li>
+              <li><a class="dropdown-item" href="#cloud-projects">DevOps</a></li>
               <li><a class="dropdown-item" href="#software-projects">Software</a></li>
 <!--              <li><hr class="dropdown-divider"></li>-->
               <li><a class="dropdown-item" href="#uni-basics-projects">Basics</a></li>

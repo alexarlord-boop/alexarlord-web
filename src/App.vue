@@ -20,9 +20,7 @@ import StructureCard from "@/components/cards/StructureCard.vue";
     <Navbar class="fixed-top navbar-light bg-white"></Navbar>
   </header>
 
-  <h1 class="display-1 mt-3">My projects</h1>
-
-  <div class="col mt-5 custom-grid">
+  <div class="col mt-3 custom-grid">
 
     <p id="cloud-projects" class="row"></p>
     <div class="row align-items-sm-start">
@@ -30,7 +28,7 @@ import StructureCard from "@/components/cards/StructureCard.vue";
         <WebSiteCard/>
       </div>
             <div class="col">
-              <h1 class="display-6 text-center m-5">Cloud</h1>
+              <h1 class="display-6 text-center m-5">DevOps</h1>
               <ApkCard/>
             </div>
     </div>
@@ -48,7 +46,7 @@ import StructureCard from "@/components/cards/StructureCard.vue";
     </div>
 
     <p id="uni-basics-projects"  class="row"></p>
-    <h1 class="display-6 text-center m-5">Basics</h1>
+    <h1 class="display-6 text-center">Basics</h1>
     <div class="cards-content-right-over-left">
       <div class="col">
         <RequestCard/>
