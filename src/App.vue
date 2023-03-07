@@ -63,8 +63,6 @@ import StructureCard from "@/components/cards/StructureCard.vue";
   <p class="row"></p>
   <p class="row"></p>
   <p class="row"></p>
-  <p class="row"></p>
-  <p class="row"></p>
 
 
   <div id="contact-section" class="text-center" @mouseover="initLink"
@@ -84,6 +82,13 @@ import StructureCard from "@/components/cards/StructureCard.vue";
             <FooterLink v-bind:lnk="'https://t.me/alexarlord'">telegram</FooterLink>
           </FooterLinks>
         </div>
+
+        <p class="row"></p>
+        <p class="row"></p>
+        <p class="row"></p>
+        <p class="row"></p>
+        <p class="row"></p>
+        <div class="position-absolute fixed-bottom text-end" style="color: rgba(183,182,182,0.85)">© Aleksandr Petrunin, 2023. All rights reserved</div>
       </div>
       <!--      <div class="col m-5 float-end"-->
       <!--           data-bs-toggle="popover" data-bs-placement="right"-->
