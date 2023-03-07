@@ -16,8 +16,7 @@
       </svg>
     </template>
     <template v-slot:title>Team Project</template>
-    <template v-slot:text>My team and I created a complex application for train stations around the country. <br>
-      We united as a team and used the Agile Scrum approach.
+    <template v-slot:text>My team and I created a complex application for train stations around the country. The goal was to work in a team and create mvp, better than competitor's.
     </template>
 
     <template v-slot:tooltips>

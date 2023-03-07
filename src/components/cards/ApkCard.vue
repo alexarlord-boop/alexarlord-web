@@ -13,10 +13,10 @@
     </svg>
     </template>
     <template v-slot:title>APK Builder</template>
-    <template v-slot:text>CI/CD configuration in cloud. The general purpose is to automate APK building for Android app.
+    <template v-slot:text>CI/CD pipeline that automates Android APK deploying.
     </template>
     <template v-slot:tooltips>
-      <tool-tip>AWS</tool-tip>
+      <tool-tip>GitHub Actions</tool-tip>
       <tool-tip>Gradle</tool-tip>
       <tool-tip>Docker</tool-tip>
     </template>

@@ -29,8 +29,7 @@
     </template>
     <template v-slot:title>API for local IT business</template>
     <template v-slot:text>
-      This API is created to help gathering and updating data from the power company server. The API is a
-      complementary software, which is used via android application.
+      This API is created to help gathering and updating data from the power company server. The API also provide functionality for customers to submit service requests and view accounting units information.
     </template>
     <template v-slot:tooltips>
       <tool-tip>Python</tool-tip>
