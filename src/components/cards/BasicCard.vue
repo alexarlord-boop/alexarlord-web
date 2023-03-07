@@ -47,7 +47,9 @@ export default {
     },
 
     goToLNK: function (link) {
-      window.location.href = link
+      if (link != null) {
+        window.location.href = link
+      }
     }
   }
 }

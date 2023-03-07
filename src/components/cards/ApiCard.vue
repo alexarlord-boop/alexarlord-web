@@ -1,6 +1,6 @@
 <template>
 <div>
-  <basic-card id="d2" class="api" v-bind:lnk="'#d2'">
+  <basic-card id="d2" class="api" >
     <template v-slot:image>
 
       <svg xmlns="http://www.w3.org/2000/svg" width="5rem" height="5rem" fill="black" class="bi bi-globe m-3"
