@@ -1,12 +1,15 @@
 <template>
   <div class="custom-lnk__text flex-wrap ">
-    <a class="display-6 custom-lnk"> <slot></slot></a>
+    <a class="display-6 custom-lnk" :href="lnk"> <slot></slot></a>
   </div>
 </template>
 
 <script>
 export default {
-  name: "FooterLink"
+  name: "FooterLink",
+  props: {
+    lnk: String
+  }
 }
 </script>
 
