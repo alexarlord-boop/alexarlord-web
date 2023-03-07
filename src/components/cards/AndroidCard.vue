@@ -1,6 +1,6 @@
 <template>
   <div>
-    <basic-card class="android">
+    <basic-card class="android" v-bind:lnk="'https://github.com/alexarlord-boop/app'">
       <template v-slot:image>
         <div class="text-center m-2">
           <svg xmlns="http://www.w3.org/2000/svg" width="184" height="184" fill="#3ddc84" class="bi bi-android"
