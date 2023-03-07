@@ -2,13 +2,9 @@
 
 import Navbar from "@/components/Navbar.vue";
 
-import Tooltip from "@/components/Tooltip.vue";
-import BasicCard from "@/components/cards/BasicCard.vue";
+
 import FooterLink from "@/components/FooterLink.vue";
-import FooterHead from "@/components/FooterHead.vue";
 import FooterLinks from "@/components/FooterLinks.vue";
-import Avatar from "@/components/Avatar.vue";
-import Chart from "@/components/dataVisualisation/Chart.vue";
 import WebSiteCard from "@/components/cards/WebSiteCard.vue";
 import ApkCard from "@/components/cards/ApkCard.vue";
 import ApiCard from "@/components/cards/ApiCard.vue";
