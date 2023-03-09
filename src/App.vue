@@ -27,10 +27,10 @@ import StructureCard from "@/components/cards/StructureCard.vue";
       <div class="col">
         <WebSiteCard/>
       </div>
-            <div class="col">
-              <h1 class="display-6 text-center m-5">DevOps</h1>
-              <ApkCard/>
-            </div>
+      <div class="col">
+        <h1 class="display-6 text-center m-5">DevOps</h1>
+        <ApkCard/>
+      </div>
     </div>
 
     <p id="software-projects" class="row"></p>
@@ -45,7 +45,7 @@ import StructureCard from "@/components/cards/StructureCard.vue";
 
     </div>
 
-    <p id="uni-basics-projects"  class="row"></p>
+    <p id="uni-basics-projects" class="row"></p>
     <h1 class="display-6 text-center">Basics</h1>
     <div class="cards-content-right-over-left">
       <div class="col">
@@ -71,24 +71,22 @@ import StructureCard from "@/components/cards/StructureCard.vue";
     <div class=" custom-more-info custom-grid">
 
       <div class="row">
-        <div class="col-6 align-self-center text-end">
-          <FooterLinks>
-            <FooterLink id="clicked" class="clicked" v-bind:lnk="'https://github.com/alexarlord-boop'">github</FooterLink>
-            <FooterLink v-bind:lnk="'https://www.linkedin.com/in/aleksandr-petrunin-b4b720259/'">linkedin</FooterLink>
-          </FooterLinks>
-        </div>
-        <div class="col-6 text-start">
-          <FooterLinks>
-            <FooterLink v-bind:lnk="'https://t.me/alexarlord'">telegram</FooterLink>
-          </FooterLinks>
-        </div>
+
+        <FooterLinks>
+          <FooterLink id="clicked" class="clicked" v-bind:lnk="'https://github.com/alexarlord-boop'">github</FooterLink>
+          <FooterLink v-bind:lnk="'https://www.linkedin.com/in/aleksandr-petrunin-b4b720259/'">linkedin</FooterLink>
+          <FooterLink v-bind:lnk="'https://t.me/alexarlord'">telegram</FooterLink>
+        </FooterLinks>
+
 
         <p class="row"></p>
         <p class="row"></p>
         <p class="row"></p>
         <p class="row"></p>
         <p class="row"></p>
-        <div class="position-absolute fixed-bottom text-end" style="color: rgba(183,182,182,0.85)">© Aleksandr Petrunin, 2023. All rights reserved</div>
+        <div class="position-absolute fixed-bottom text-end row" style="color: rgba(183,182,182,0.85)">
+          <div class="col">© Aleksandr Petrunin, 2023. <br/> All rights reserved</div>
+        </div>
       </div>
       <!--      <div class="col m-5 float-end"-->
       <!--           data-bs-toggle="popover" data-bs-placement="right"-->

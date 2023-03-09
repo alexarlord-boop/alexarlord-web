@@ -1,7 +1,7 @@
 <template>
-  <div class="custom-lnk__text flex-wrap ">
+<div class="col">
     <a class="display-6 custom-lnk" :href="lnk"> <slot></slot></a>
-  </div>
+</div>
 </template>
 
 <script>

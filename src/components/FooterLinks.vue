@@ -1,5 +1,5 @@
 <template>
-  <div id="links">
+  <div id="links" class="row mt-5">
    <slot></slot>
   </div>
 </template>
