@@ -46,14 +46,14 @@ import StructureCard from "@/components/cards/StructureCard.vue";
     </div>
 
     <p id="uni-basics-projects" class="row"></p>
-    <h1 class="display-6 text-center">Basics</h1>
-    <div class="cards-content-right-over-left">
+    <div class="cards-content-left-over-right">
       <div class="col">
-        <RequestCard/>
-      </div>
-      <div class="col">
+        <h1 class="display-6 text-center m-5">Basic Projects</h1>
         <AgileCard/>
         <StructureCard/>
+      </div>
+      <div class="col">
+        <RequestCard/>
       </div>
     </div>
   </div>
