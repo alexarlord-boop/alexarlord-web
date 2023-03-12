@@ -1,8 +1,9 @@
 <template>
-  <div class="card rounded-5 m-3 basic-card"
+  <a class="card rounded-5 m-3 basic-card"
+     :href="lnk"
+     target="_blank"
        @mouseover="addClass"
-       @mouseout="removeClass"
-       @click="goToLNK(lnk)">
+       @mouseout="removeClass">
 
     <div class="d-flex justify-content-evenly">
       <slot name="image"></slot>
@@ -25,11 +26,10 @@
         <slot name="text"></slot>
       </p>
     </div>
-
     <div class="card-footer border-white bg-transparent fs-5">
       <slot name="tooltips"></slot>
     </div>
-  </div>
+  </a>
 </template>
 
 <script>
@@ -38,34 +38,34 @@ export default {
   props: {
     lnk: String
   },
-  methods: {
-    addClass: function () {
-      this.$el.classList.add("shadow-lg", "bg-body-tertiary", "rounded")
-    },
-    removeClass: function () {
-      this.$el.classList.remove("shadow-lg", "bg-body-tertiary", "rounded")
-    },
-
-    goToLNK: function (link) {
-      if (link != null) {
-        window.location.href = link
-      }
-    }
-  }
+  // methods: {
+  //   addClass: function () {
+  //     this.$el.classList.add("shadow-lg", "bg-body-tertiary", "rounded")
+  //   },
+  //   removeClass: function () {
+  //     this.$el.classList.remove("shadow-lg", "bg-body-tertiary", "rounded")
+  //   }
+  // }
 }
 </script>
 
 <style lang="sass">
+a
+  &:active, &:visited
+    color: black
 
 .basic-card
   cursor: pointer
   transition: all ease-in-out 0.15s
+  border: 1px rgba(182, 180, 180, 0.65) solid
+  box-shadow: rgba(182, 180, 180, 0.65) 3px 3px 5px 2px
 
   .github-icon
     opacity: 0
 
   &:hover
     scale: 1.02
+    box-shadow: rgba(182, 180, 180, 0.65) 12px 12px 20px 2px
 
     .github-icon
       opacity: 1
