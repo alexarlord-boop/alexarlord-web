@@ -14,5 +14,5 @@ export default {
 
 <style lang="sass">
   .custom-badge
-    box-shadow: rgba(112, 111, 112, 0.58) 3px 3px 5px 2px
+    box-shadow: rgba(182, 180, 180, 0.65) 3px 3px 5px 2px
 </style>
