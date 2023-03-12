@@ -22,10 +22,12 @@
 
   --custom-card-golographic-1:  linear-gradient(217deg, rgba(203, 68, 252, 0.96), rgba(255, 0, 100, 0.73) 071%);
   --custom-card-golographic-2: rgba(203, 68, 252, 0.94);
-  --custom-card-devops-1: #00C8FF;
-  --custom-card-android-1: #3ddc84;
-  --custom-card-api-1: #6200ee;
+  --custom-card-golographic-3: linear-gradient(to left, #9848c5 0%, #cf6cc9 33%, #ff2d82 88%, #ee4e8d 100%);
+  --custom-card-devops-1: linear-gradient(120deg, #42f0fa 0%, #2c81f5 100%);
+  --custom-card-android-1: linear-gradient(90deg, rgba(63,220,61,1) 0%, rgba(61,220,132,1) 51%, rgba(61,220,185,1) 100%);
+  --custom-card-api-1: linear-gradient(90deg, rgba(53,0,238,1) 0%, rgba(98,0,224,1) 51%, rgba(133,0,224,1) 100%);
   --custom-card-sideproject-1:  #fcd40c;
+  --custom-card-sideproject-2:  linear-gradient(90deg, rgba(0,0,0,1) 70%, rgba(252,212,12,1) 100%);
 }
 
 /* semantic color variables for this project */
