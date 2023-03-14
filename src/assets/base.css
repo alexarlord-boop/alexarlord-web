@@ -27,7 +27,8 @@
   --custom-card-android-1: linear-gradient(90deg, rgba(63,220,61,1) 0%, rgba(61,220,132,1) 51%, rgba(61,220,185,1) 100%);
   --custom-card-api-1: linear-gradient(90deg, rgba(53,0,238,1) 0%, rgba(98,0,224,1) 51%, rgba(133,0,224,1) 100%);
   --custom-card-sideproject-1:  #fcd40c;
-  --custom-card-sideproject-2:  linear-gradient(90deg, rgba(0,0,0,1) 70%, rgba(252,212,12,1) 100%);
+  --custom-card-sideproject-2: linear-gradient(90deg, rgba(252,247,12,1) 15%, rgba(255,233,0,1) 50%, rgba(252,212,12,1) 80%);
+  --custom-card-git-1: linear-gradient(90deg, rgba(45,45,45,1) 10%, rgba(106,106,106,1) 13%, rgba(0,0,0,1) 31%);
 }
 
 /* semantic color variables for this project */
