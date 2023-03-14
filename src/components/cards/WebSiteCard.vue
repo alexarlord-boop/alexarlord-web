@@ -15,11 +15,10 @@
       </template>
       <template v-slot:title>This Website</template>
       <template v-slot:text>
-        This site is dedicated to my multidisciplinary personality. I have tried and excelled in many different
-        areas of IT. On this page you can find my main projects that I really enjoy working on and would like to
-        share with you.
+        Hello! As a multi-skilled developer, I'm well-versed in various programming languages and frameworks.
+        <br>I specialize in creating advanced web applications that offer exceptional user experiences.
         <br>
-        <br>I strive for elegant solution!
+        <br>Let's build something great together!
       </template>
       <template v-slot:tooltips>
         <tool-tip>Vue.js</tool-tip>
