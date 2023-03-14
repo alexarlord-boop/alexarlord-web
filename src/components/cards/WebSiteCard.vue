@@ -16,7 +16,7 @@
       <template v-slot:title>This Website</template>
       <template v-slot:text>
         Hello! As a multi-skilled developer, I'm well-versed in various programming languages and frameworks.
-        <br>I specialize in creating advanced web applications that offer exceptional user experiences.
+        <br>I specialize in creating advanced applications that offer exceptional user experiences.
         <br>
         <br>Let's build something great together!
       </template>
