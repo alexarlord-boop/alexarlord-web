@@ -11,13 +11,13 @@
         </div>
       </template>
       <template v-slot:title>Mobile App for local IT business</template>
-      <template v-slot:text>Useful tool for workers in IT power company. This app helps collect data and manage
-        records about city areas.
+      <template v-slot:text>Useful tool for workers in IT power company. This app helps collect and update data and manage
+        records about electricity accounting units across the city.
       </template>
       <template v-slot:tooltips>
         <tool-tip>Android</tool-tip>
         <tool-tip>Kotlin</tool-tip>
-        <tool-tip>SQLite</tool-tip>
+        <tool-tip>Compose</tool-tip>
       </template>
     </basic-card>
   </div>

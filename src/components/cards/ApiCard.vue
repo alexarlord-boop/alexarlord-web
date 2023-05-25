@@ -32,7 +32,7 @@
       This API is created to help gathering and updating data from the power company server. The API also provide functionality for customers to submit service requests and view accounting units information.
     </template>
     <template v-slot:tooltips>
-      <tool-tip>Python</tool-tip>
+      <tool-tip>PHP</tool-tip>
       <tool-tip>Sql Server</tool-tip>
       <tool-tip>Stoplight</tool-tip>
     </template>
