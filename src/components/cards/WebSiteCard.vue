@@ -17,8 +17,7 @@
       <template v-slot:text>
         I specialize in creating advanced applications that solves real-world problems and offer exceptional user experience.
         The website is a hub for my projects, that I really enjoyed working on.
-        <br>
-        <br>Let's build something great together!
+
       </template>
       <template v-slot:tooltips>
         <tool-tip>Vue.js</tool-tip>
