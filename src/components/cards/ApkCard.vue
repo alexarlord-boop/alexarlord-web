@@ -14,13 +14,14 @@
 <!--    </svg>-->
     </template>
     <template v-slot:title>APK Builder</template>
-    <template v-slot:text>CI pipeline that automates Android APK building.
+    <template v-slot:text>A pipeline that automates Android APK building.
       <br> This pipeline generates debug and release APKs, which you can download right after a code base has changed.
 
     </template>
     <template v-slot:tooltips>
       <tool-tip>GitHub Actions</tool-tip>
       <tool-tip>Gradle</tool-tip>
+      <tool-tip>CI</tool-tip>
     </template>
   </basic-card>
 </div>
