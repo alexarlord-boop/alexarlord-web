@@ -12,6 +12,8 @@ import AndroidCard from "@/components/cards/AndroidCard.vue";
 import RequestCard from "@/components/cards/RequestCard.vue";
 import AgileCard from "@/components/cards/AgileCard.vue";
 import StructureCard from "@/components/cards/StructureCard.vue";
+import IconCommunity from "@/components/icons/IconCommunity.vue";
+import IconEcosystem from "@/components/icons/IconEcosystem.vue";
 </script>
 
 <template>
@@ -20,7 +22,52 @@ import StructureCard from "@/components/cards/StructureCard.vue";
     <Navbar class="fixed-top navbar-light bg-white"></Navbar>
   </header>
 
-  <div class="col mt-3 custom-grid">
+
+  <div class="col mt-5 custom-grid">
+
+    <div class="container mt-2">
+      <h1 @mouseover="startAnimation"
+          @mouseleave="stopAnimation" class="card-title mb-3 text-center display-3">Hi there, I'm Alex <span class="hand-container"> <p class="hand-icon" style="transition: transform 4.5s;">👋</p></span>
+      </h1>
+      <!--      <h3 class="card-subtitle mb-2 text-muted">Software Engineer | Android Developer</h3>-->
+      <p class="display-6 mt-5">Welcome to my Project Hub! </p>
+      <h5 class="mb-5"><br>I'm a passionate software engineer with expertise in Android development, web applications,
+        CI/CD, cloud computing, and machine learning. I'm constantly learning and exploring new technologies to enhance
+        my skills and build innovative solutions.</h5>
+
+
+      <div class="card">
+        <div class="card-body">
+
+          <div class=" row">
+            <div class="col-md-7">
+              <h3 class="display-6">🔧 Technologies &amp; Tools</h3>
+              <ul>
+                <li><strong>Programming Languages:</strong> Java, Kotlin, Python, JavaScript</li>
+                <li><strong>Android Development:</strong> Android Studio, Kotlin, Android SDK, Jetpack Compose</li>
+                <li><strong>Web Development:</strong> HTML5, CSS3, JavaScript, Vue, Node.js, RESTful APIs</li>
+                <li><strong>CI/CD:</strong> Jenkins, GitHub Actions & Pages</li>
+                <li><strong>Version Control:</strong> Git, GitHub</li>
+                <br>
+                <span class="rounded-pill text-bg-warning p-1"> in progress</span>
+                <li><strong>Cloud Computing:</strong> AWS, Docker, Kubernetes</li>
+                <li><strong>Machine Learning:</strong> TensorFlow, PyTorch, scikit-learn, Jupyter Notebook</li>
+              </ul>
+            </div>
+
+            <div class="col-md-5">
+              <h2 class="display-6">🌱Currently Learning</h2>
+              <ul>
+                <li><p class="fs-5">AWS cloud platform to develop scalable and robust applications. </p></li>
+                <li><p class="fs-5">Machine learning algorithms and frameworks like <strong>TensorFlow</strong> and
+                  <strong>PyTorch</strong> to leverage the power of artificial intelligence in my projects.</p></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
     <p id="cloud-projects" class="row"></p>
     <div class="row align-items-sm-start">
@@ -48,7 +95,7 @@ import StructureCard from "@/components/cards/StructureCard.vue";
     <p id="uni-basics-projects" class="row"></p>
     <div class="cards-content-left-over-right">
       <div class="col">
-        <h1 class="display-6 text-center m-5">Basic Projects</h1>
+        <h1 class="display-6 text-center m-5">First Steps</h1>
         <AgileCard/>
         <StructureCard/>
       </div>
@@ -65,12 +112,20 @@ import StructureCard from "@/components/cards/StructureCard.vue";
   <p class="row"></p>
 
 
-  <div id="contact-section" class="text-center" @mouseover="initLink"
+  <div id="contact-section" class="text-center mt-5" @mouseover="initLink"
        @mouseleave="ejectLink">
 
     <div class=" custom-more-info custom-grid">
 
       <div class="row">
+
+        <h2 class="display-6">
+          <icon-community/>
+          Let's Connect
+        </h2>
+        <h5>Feel free to reach out to me via email at <a href="mailto:petrunina602@gmail.com">petrunina602@gmail.com</a>
+          or connect with me here: </h5>
+
 
         <FooterLinks>
           <FooterLink id="clicked" class="clicked" v-bind:lnk="'https://github.com/alexarlord-boop'">github</FooterLink>
@@ -113,6 +168,14 @@ import * as d3 from "d3"
 export default {
 
   methods: {
+    startAnimation() {
+      const handIcon = document.querySelector('.hand-icon');
+      handIcon.classList.add('animate');
+    },
+    stopAnimation() {
+      const handIcon = document.querySelector('.hand-icon');
+      handIcon.classList.remove('animate');
+    },
     initLink() {
       // let pageBottom = document.querySelector("#page-bottom")
       // setTimeout(() => {
@@ -149,10 +212,26 @@ export default {
   to
     stroke-dashoffset: 50
 
-
 .animation
   width: 6rem
   height: 6rem
 //border: 1px solid #000
+
+.animate
+  animation: wave 1s infinite
+
+
+@keyframes wave
+  0%
+    transform: rotate(0deg)
+
+  25%
+    transform: rotate(-15deg)
+
+  75%
+    transform: rotate(15deg)
+
+  100%
+    transform: rotate(0deg)
 
 </style>
