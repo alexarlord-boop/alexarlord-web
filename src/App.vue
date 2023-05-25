@@ -28,7 +28,7 @@ import StructureCard from "@/components/cards/StructureCard.vue";
         <WebSiteCard/>
       </div>
       <div class="col">
-        <h1 class="display-6 text-center m-5">DevOps</h1>
+        <h1 class="display-6 text-center m-4">DevOps</h1>
         <ApkCard/>
       </div>
     </div>
