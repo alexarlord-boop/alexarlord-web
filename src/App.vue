@@ -29,34 +29,33 @@ import IconEcosystem from "@/components/icons/IconEcosystem.vue";
       <h1 @mouseover="startAnimation"
           @mouseleave="stopAnimation" class="card-title mb-3 text-center display-3">Hi there, I'm Alex <span class="hand-container"> <p class="hand-icon" style="transition: transform 4.5s;">👋</p></span>
       </h1>
-      <!--      <h3 class="card-subtitle mb-2 text-muted">Software Engineer | Android Developer</h3>-->
-      <p class="display-6 mt-5">Welcome to my Project Hub! </p>
-      <h5 class="mb-5"><br>I'm a passionate software engineer with expertise in Android development, web applications,
-        CI/CD, cloud computing, and machine learning. I'm constantly learning and exploring new technologies to enhance
-        my skills and build innovative solutions.</h5>
 
+      <h5 class="mb-5 display-6 text-center"><br>The software engineer, experienced in Android, WEB, ML,
+        <br/>Cloud computing.</h5>
 
-      <div class="card">
-        <div class="card-body">
+      <div class="col-md-12 mx-auto" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+        <div class="card col-md-8">
+          <div class="card-body">
 
-          <div class=" row">
-            <div class="col-md-7">
-              <h3 class="display-6">🔧 Technologies &amp; Tools</h3>
-              <ul>
-                <li><strong>Programming Languages:</strong> Java, Kotlin, Python, JavaScript</li>
-                <li><strong>Android Development:</strong> Android Studio, Kotlin, Android SDK, Jetpack Compose</li>
-                <li><strong>Web Development:</strong> HTML5, CSS3, JavaScript, Vue, Node.js, RESTful APIs</li>
-                <li><strong>CI/CD:</strong> Jenkins, GitHub Actions & Pages</li>
-                <li><strong>Version Control:</strong> Git, GitHub</li>
-                <br>
-                <span class="rounded-pill text-bg-warning p-1"> in progress</span>
-                <li><strong>Cloud Computing:</strong> AWS, Docker, Kubernetes</li>
-                <li><strong>Machine Learning:</strong> TensorFlow, PyTorch, scikit-learn, Jupyter Notebook</li>
-              </ul>
-            </div>
+            <h3 class="display-6 text-center">🔧 Technologies</h3>
+            <ul class="fs-5">
+              <li><strong>Programming Languages:</strong> Java, Kotlin, Python, JavaScript</li>
+              <li><strong>Android Development:</strong> Android Studio, Kotlin, Android SDK, Jetpack Compose</li>
+              <li><strong>Web Development:</strong> HTML5, CSS3, JavaScript, Vue, Node.js, RESTful APIs</li>
+              <li><strong>CI/CD:</strong> Jenkins, GitHub Actions & Pages</li>
+              <li><strong>Version Control:</strong> Git, GitHub</li>
+              <br>
+              <span class="rounded-pill text-bg-warning p-1"> in progress</span>
+              <li><strong>Cloud Computing:</strong> AWS, Docker, Kubernetes</li>
+              <li><strong>Machine Learning:</strong> TensorFlow, PyTorch, scikit-learn, Jupyter Notebook</li>
+            </ul>
 
-            <div class="col-md-5">
-              <h2 class="display-6">🌱Currently Learning</h2>
+          </div>
+        </div>
+        <div class="card col-md-8 mt-3">
+          <div class="card-body">
+            <div >
+              <h2 class="display-6 text-center">🌱 Learning</h2>
               <ul>
                 <li><p class="fs-5">AWS cloud platform to develop scalable and robust applications. </p></li>
                 <li><p class="fs-5">Machine learning algorithms and frameworks like <strong>TensorFlow</strong> and
@@ -64,12 +63,14 @@ import IconEcosystem from "@/components/icons/IconEcosystem.vue";
               </ul>
             </div>
           </div>
-
         </div>
       </div>
+
     </div>
 
+
     <p id="cloud-projects" class="row"></p>
+    <p class="display-6 mt-5 text-center">Welcome to my <span style="">InfoHub!</span> </p>
     <div class="row align-items-sm-start">
       <div class="col">
         <WebSiteCard/>
